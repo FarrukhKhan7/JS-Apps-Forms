@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS APPS,Forms,table</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+ </head>
+<body>
+
+ 
+<!-- 
+
+    <div class="Calculator">
+        <div class="input-div">
+            <input id="input-id" type="text">
+        </div>
+        <div class="">
+            <button class="btn" onclick="clearbtn()">C</button>
+            <button class="btn del-btn" onclick="del()">Del</button>
+            <button class="btn" onclick="getnumber('%')">%</button>
+            <button class="btn"  onclick="getnumber('/')">/</button>   
+        </div>
+        <div class="num-div">
+            <button class="btn"  onclick="getnumber('7')">7</button>
+            <button class="btn"  onclick="getnumber('8')">8</button>
+            <button class="btn"  onclick="getnumber('9')">9</button>
+            <button class="btn"  onclick="getnumber('+')">+</button>
+           
+        </div>
+        <div class="num-div">
+            <button class="btn"  onclick="getnumber('4')">4</button>
+            <button class="btn"  onclick="getnumber('5')">5</button>
+            <button class="btn"  onclick="getnumber('6')">6</button>
+            <button class="btn"  onclick="getnumber('-')">-</button>
+            
+        </div>
+        <div class="num-div">
+            <button class="btn"  onclick="getnumber('1')">1</button>
+            <button class="btn"  onclick="getnumber('2')">2</button>
+            <button class="btn"  onclick="getnumber('3')">3</button>
+            <button class="btn"  onclick="getnumber('*')">*</button>
+         
+        </div>
+        <div class="num-div">
+            <button class="btn0"  onclick="getnumber('0')">0</button>
+            <button class="btn"  onclick="getnumber('.')">.</button>
+            <button class="btn"  onclick="getresult()">=</button>
+        </div>
+    </div> -->
+    <!-- ------------  Calculator END--------------- -->
+    <!-- <img id="img1" src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixlib=rb-1.2.1&w=1000&q=80" alt="" onmouseover="this.src='https://www.extremetech.com/wp-content/uploads/2019/12/SONATA-hero-option1-764A5360-edit.jpg'" width="300px"
+   >
+    <button  onclick="img1.src='https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixlib=rb-1.2.1&w=1000&q=80'">click</button>
+     -->
+
+     <!-- STOP WATCH START -->
+<!-- <section class=" my-5"> 
+     <div class="container text-center">
+        <div class=" width-container">
+         <div class="row">
+             <div class="col-md-12">
+                 <h2>STOP WATCH</h2>
+             </div>
+         </div>
+         <div class="row">
+            <div class="col-sm-4">
+                <h1 id="min">0</h1>
+                <button id="btn" class="btn" onclick="start()">Start</button>
+            </div>
+            <div class="col-sm-4">
+                <h1 id="sec">0</h1>
+                <button class="btn " onclick="pause()">Pause</button>
+            </div>
+            <div class="col-sm-4">
+                <h1 id="msec">0</h1>
+                <button  class="btn " onclick="reset()">Reset</button>
+            </div>
+        </div>
+    </div>
+ </div>
+    </section> -->
+
+     <!-- END  STOP WATCH START -->
+
+
+     <!-- START MESSAGE APP -->
+    <!-- <div id="msg">
+
+    </div>
+      <input type="text"  id="input-msg">
+      <button onclick="AddMsg()">SEND</button> -->
+
+
+     <!-- END MESSAGE APP -->
+
+
+
+     <!--START TODO APP -->
+
+     <!-- <div class="todoApp text-center my-3 py-5">
+         <h1>TODO APP</h1>
+    <input id="input-todo" type="text" class="mt-5">
+    <button onclick="saveTodo()">SAVE</button>
+    <button onclick="delAll()">DELETE ALL</button>
+
+    <div class="list-style mt-3">
+        <ul id="list">
+             
+        </ul>
+    </div>
+</div>
+      -->
+      
+     <!-- END TODO APP -->
+   
+    
+     <!-- FORM TABLE OUTPUT -->
+     <!-- <p>
+        <input type="button" id="addRow" value="Add New Row" onclick="addRow()" />
+    </p>
+    <div id="cont"></div>   
+    <p><input type="button" id="bt" value="Submit Data" onclick="submit()" /></p>
+    <p id="output"></p> -->
+ <!--END  FORM TABLE OUTPUT -->
+    
+
+  <!--Start- QUIZ APP -->
+    
+    <!-- <div id="quiz-div" >
+        <div id="quiz-text">
+        <h1>QUIZ</h1><br> 
+        <div id="clock">
+            <h4 id="min">00 </h4> <label for="">m</label>
+            <h4 id="sec"> 00</h4> <label for="">s</label>
+        </div>
+        <div class="qs-div">
+    <p><b>1. King Of Fruits :</b></p>
+    <input type="radio" name="ans" value="Apple">
+    <label for="">Apple</label><br>
+    <input type="radio" name="ans" id="Mango" value="Mango">
+    <label for="">Mango</label><br>
+    <input type="radio" name="ans" value="Banana">
+    <label for="">Banana</label><br><br>
+
+    <p><b>2. Which one is round ?</b></p>
+    <input type="radio" name="ans1" value="bat">
+    <label for="">Bat</label><br>
+    <input type="radio" name="ans1" id="ball" value="ball">
+    <label for="">ball</label><br>
+    <input type="radio" name="ans1" value="Racket">
+    <label for="">Racket</label><br><br>
+
+    <p><b>3. City of Lights :</b></p>
+    <input type="radio" name="ans2" id="Karachi" value="Karachi">
+    <label for="">Karachi</label><br>
+    <input type="radio" name="ans2"  value="Lahore">
+    <label for="">Lahore</label><br>
+    <input type="radio" name="ans2" value="Islamabad">
+    <label for="">Islamabad</label><br><br>
+</div>
+    <button onclick="submit()" class="submitBtn">Submit</button>
+    
+</div>
+
+<center>
+<h1 id="resHead"></h1>
+<p id="result"></p>
+</center>
+
+</div>
+
+
+
+<div class="container">
+    <div class="row ">
+        <div id="quizStart">
+      
+        <div class="col-md-12">
+            <h1>QUIZ APP</h1>
+        </div>
+        <div class="col-md-12">
+            <p class="txt txt1">Quiz contain 5 Questions, you have to attempt all on the given time.</p>
+        </div>
+        <div class="col-md-12">
+           <button id="startbtn" onclick="startTime(),start(),start1()">Start</button>
+        </div>
+        <div class="col-md-12">
+            <p class="txt">© Code By Farrukh</p>
+        </div>
+        </div>
+       
+    </div>
+</div> -->
+
+<!--END-Start- QUIZ APP -->
+
+
+
+
+
+
+
+
+    <!-- Form validation: text fields -->
+    <!-- <form onSubmit="return checkLastName()">
+        <label for="lastname">Please enter your lastname:</label>
+        <br>
+        <input type="text" id="lastnamefield">
+        <input type="submit" value="Submit Form">
+    </form>  -->
+
+<!-- Form validation: dropdown -->
+<!-- <form onSubmit="return checkForSelection('states');">
+        <select id="states">
+        <option value="" selected="selected">
+        SELECT A STATE</option>
+        <option value="AL">Alabama</option>
+        <option value="AK">Alaska</option>
+        <option value="AZ">Arizona</option>
+        <option value="AR">Arkansas</option>
+        </select>&nbsp;&nbsp;
+        <input type="submit" value="Submit Form">
+        </form> -->
+        <!-- Form validation: radio btns (they cannot be get by ids they get by name)-->
+        <!-- <form onSubmit="return validateRadios('r1');">
+            <input type="radio" name="r1" value="cat"> Cat<br>
+            <input type="radio" name="r1" value="bat"> Bat<br>
+            <input type="radio" name="r1" value="hat"> Hat<br>
+              <input type="submit" value="Submit Form">
+            </form> -->
+
+<!-- Form validation: radio btns (they cannot be get by ids they get by name)-->
+        <!-- <form onSubmit="return validateRadios();">
+            <input type="radio" name="r1" value="cat"> Cat<br>
+            <input type="radio" name="r1" value="bat"> Bat<br>
+            <input type="radio" name="r1" value="hat"> Hat<br>
+             qs2<br>
+            <input type="radio" name="r2" value="humty"> humty<br>
+            <input type="radio" name="r2" value="dumty"> dumty<br>
+            <input type="radio" name="r2" value="wall"> wall<br>
+            <input type="submit" value="Submit Form">
+            </form> -->
+
+
+
+<!-- 
+            Form validation: ZIP codes -->
+ <!-- <form onSubmit="return validateZIP()">
+        <label for="zip">Please enter your zip code:</label>
+        <br>
+        <input type="text" id="zip" maxlength="5">
+        <input type="submit" value="Submit Form">
+    </form>  -->
+
+<!-- FORMS QS.1 CHP 49-52 -->
+<!-- 
+<form action="" class="modal-content" onSubmit="return validateForm()" name="registration">
+
+<h1>Sign Up Form With Javascript</h1>
+<label for="userId">User Id : </label> 
+<input type="text" name="userid" required placeholder="Enter your desired User ID" minlength="5" maxlength="12"> <br> <br>
+<label for="firstName">Firstname : </label>
+<input type="text" name="fname" required placeholder="Enter first name" minlength="2" maxlength="12"> <br> <br>
+<label for="lastName">Lastname : </label> 
+<input type="text" name="lname" placeholder="Enter last name" required minlength="2" maxlength="12"> <br> <br>
+<label for="email">Email : </label> 
+<input type="email" name="email" required placeholder="Enter email "> <br> <br>
+<label for="password">Password : </label>
+<input type="password" name="password" required placeholder="Enter password" minlength="5" maxlength="16"> <br> <br>
+<label for="phone">Phone number : </label> 
+<input type="number" name="phone"  placeholder="Enter phone number" minlength="7" maxlength="16"> <br> <br>
+<button type="submit" class="signupbtn" onSubmit="return validateForm()"  onclick="submitForm()" >Sign Up</button>
+</form> -->
+
+
+<!-- FORMS QS.2 CHP 49-52 -->
+<!-- <h2 style="text-align:center">Product Card</h2>
+
+
+
+<div class="card">
+
+ <img src="jeans3.jpg" alt="Denim Jeans" style="width:100%">
+
+ <h1>Tailored Jeans</h1>
+
+ <p class="price">$19.99</p>
+
+  <p><button onclick="myFunction()">Add to Cart</button></p>
+
+</div>
+
+<p id="demo"></p> -->
+<!-- FORMS QS.2 CHP 49-52 -->
+<!-- <h1>FORM</h1>
+<div id="form-div">
+
+</div>
+<button onclick="studentForm()">ADD STUDENT DETAIL</button>
+<button onclick="submitForm()">SUBMIT</button> -->
+
+
+
+<!-- <body  onload="createTable()"> BODY ME ONLOAD LGEGA-->
+    <!--Start- Marksheet Table -->
+      <!-- <table border="2">
+        <tr>
+          <th >Subject</th>
+          <th>Total Marks</th>
+          <th>Obtained Marks</th>
+          <th>Percentage</th>
+        </tr>
+   
+        <tr>
+          <td id="s1"></td>
+          <td id="t1"></td>
+          <td id="ob1"></td>
+          <td id="p1"></td>
+        </tr>
+   
+        <tr>
+         <td id="s2"></td>
+         <td id="t2"></td>
+         <td id="ob2"></td>
+         <td id="p2"></td>
+       </tr>
+   
+       <tr>
+         <td id="s3"></td>
+         <td id="t3"></td>
+         <td id="ob3"></td>
+         <td id="p3"></td>
+       </tr>
+   
+       <tr>
+         <td></td>
+         <td id="total"></td>
+         <td id="obtain"></td>
+         <td id="per"></td>
+       </tr>
+       
+      </table>
+      <button onclick="tab()">Start Calculate</button> -->
+      <!--End- Marksheet Table -->
+   
+
+
+
+
+
+ <!-- FORM TABLE OUTPUT -->
+     <!-- <p>
+        <input type="button" id="addRow" value="Add New Row" onclick="addRow()" />
+    </p>
+    <div id="cont"></div>   
+    <p><input type="button" id="bt" value="Submit Data" onclick="submit()" /></p>
+    <p id="output"></p> -->
+ <!--END  FORM TABLE OUTPUT -->
+
+</body>
+</html>
